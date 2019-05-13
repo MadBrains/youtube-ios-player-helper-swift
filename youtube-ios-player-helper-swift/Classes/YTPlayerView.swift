@@ -102,7 +102,7 @@ public extension YTPlayerViewDelegate{
 
 open class YTPlayerView: UIView {
     var webView: UIWebView!
-    open var delegate: YTPlayerViewDelegate?
+    open weak var delegate: YTPlayerViewDelegate?
     
     var originURL: URL!
     var initialLoadingView: UIView?
