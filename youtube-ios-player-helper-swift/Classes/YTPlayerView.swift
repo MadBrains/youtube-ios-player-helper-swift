@@ -64,7 +64,7 @@ public enum YTRegexPatterns: String{
     case syndication = "^https://tpc.googlesyndication.com/sodar/(.*).html$"
 }
 
-public protocol YTPlayerViewDelegate {
+public protocol YTPlayerViewDelegate: class {
     func playerViewDidBecomeReady(_ playerView: YTPlayerView)
     func playerView(_ playerView: YTPlayerView, didChangeTo state: YTPlayerState)
     func playerView(_ playerView: YTPlayerView, didChangeTo quality: YTPlaybackQuality)
